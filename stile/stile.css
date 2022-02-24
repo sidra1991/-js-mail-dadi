@@ -1,0 +1,49 @@
+.mail-container {
+    height: 50vh;
+    width: 100vw;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dadi {
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+    background-color: rgb(58, 126, 126);
+    flex-wrap: wrap;
+}
+
+.casel {
+    width: 49%;
+    height: 78%;
+    color: white;
+}
+
+.winner {
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 3em;
+}
+
+.text {
+    text-align: center;
+}
+
+.dado {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    border: 2px solid black;
+    border-radius: 30px;
+    color: black;
+
+}
+
+

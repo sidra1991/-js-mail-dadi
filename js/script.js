@@ -1,29 +1,22 @@
-alert('work in progress')
-
 
 // Mail
 // Chiedi all’utente la sua email,
 
 // controlla che sia nella lista di chi può accedere,
-// const controlEmail = ['canebagnato@libero.it', 'pupazzo81@gmail.com', 'cricetorusso@htmail.com', 'aaa']
-// let zero = 0
-// let userEmail = prompt()
 
-// for (let i = 0; i < controlEmail.length; i++) {
+const controlEmail = ['canebagnato@libero.it', 'pupazzo81@gmail.com', 'cricetorusso@htmail.com', 'puzzadipiedi@gmail.com', 'puzzolone@libero.it', 'bimbomatto@example.com'];
+let userEmail = prompt("inserisci la tue email")
 
-//     if (userEmail == controlEmail[i]) {
-//         alert("cambia email");
-//         let userEmail2 = prompt();
-//         for (let i = 0; i < controlEmail.length; i++) {
-//             if (userEmail2 == controlEmail[i]) {
-//                 alert(" e mo basta");
+for (let i = 0; i < controlEmail.length; i++) {
 
-//             }
-//         }
-//     }
-// }
+    if (userEmail != controlEmail[i]) {
+        controlEmail.push(userEmail);
+        document.querySelector(`#email`).innerHTML=`ben venuto ${userEmail}`
 
-// alert("fine")
+    } else {
+        document.querySelector(`#email`).innerHTML=`ben tornato ${userEmail}`
+    }
+}
 
 
 // stampa un messaggio appropriato sull’esito del controllo.
@@ -36,18 +29,18 @@ alert('work in progress')
 
 
 let player = Math.floor(Math.random() * 7);
-let computer =  Math.floor(Math.random()*7);
+let computer = Math.floor(Math.random() * 7);
 
-
-console.log(player, computer)
+document.querySelector(`.first`).innerHTML=`${player}`
+document.querySelector(`.second`).innerHTML=`${computer}`
 
 
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 if (player < computer) {
-    alert(`computer ween ${computer} `)
+    document.querySelector(`.winner`).innerHTML=`vincitore è computer`
 } else {
-    alert(`player ween  ${player} `)
+    document.querySelector(`.winner`).innerHTML=`vincitore è player`
 }
 
 
